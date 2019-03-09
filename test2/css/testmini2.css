@@ -1,0 +1,92 @@
+body{
+	font-family: Arial, "Times New Roman", sans-serif;
+	font-size: 16px;
+	background-color: white;
+
+}
+#wrap{
+	background-color: white;
+	width: 960px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+
+#header{
+	display: flex;
+
+}
+/*#slogan{
+	position: absolute;  chỉnh kích thước web -> mất
+	top:50px;
+	left: 470px;
+}*/
+#slogan{
+	padding-top: 30px;
+	padding-left: 100px;
+}
+
+
+
+ul li{
+	list-style: none;
+}
+#menu{
+	background-color: aqua;
+}
+#list{
+	height: 35px;
+	/*display: flex;*/
+
+	
+
+}
+#list li {
+	float:left;
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	background-color: red;
+	line-height: 35px;
+
+}
+#list li:hover{
+	background-color: yellow; 
+}
+#list li a{
+	text-decoration: none;
+	color: white;
+
+}
+#content{
+	display:flex;
+	background-image: url(../images/inner-wrap_bg.png);
+	background-repeat: repeat-x; 
+}
+#Lcontent{
+	width:300px;
+}
+#Rcontent{
+	width:600px;
+}
+h2,h3,#footer,#Rcontent{
+	text-align: center;
+}
+#Lcontent h3 ul li{
+	font-style: italic;
+}
+#footer{
+	background-image: url(../images/footer_background.jpg);
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 118px;
+	padding-top: 10px;
+}
+#footer p{
+	line-height: 90px;
+}
+#Lcontent{
+	padding-right: 20px;
+}
