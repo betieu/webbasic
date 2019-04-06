@@ -1,0 +1,37 @@
+body{
+	background-color: #f3f3f3;
+	display: flex;
+	justify-content: center; /* can giua noi dung trong check box*/
+	align-items: center;/* can giua theo chieu ngang*/
+	height: 100vh; /*can giua theo chieu doc*/
+}
+.switch{
+	-webkit-appearance:none;
+	appearance: none; /*Lam mat cac thuoc tinh cua checkbox bien mat */
+	width: 80px;
+	height: 44px;
+	background-color: #c6c6c6;
+	border-radius: 100px;
+	border: 1px solid gray;
+	outline: none;
+	position: relative;
+	transition:0.7s;
+}
+.switch:checked{
+	background-color: mediumseagreen;
+	border: 1px solid mediumseagreen;
+}
+.switch:before {
+	content: '';
+	width: 42px;
+	height:42px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background-color: white;
+	border-radius: 100px;
+	transition: 0.7s
+}
+.switch:checked:before{
+	left:36px;
+}
