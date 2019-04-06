@@ -1,0 +1,43 @@
+.cha{
+  margin:50px;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #c6c6c6;
+  border-radius:50px;
+  background: #c6c6c6;
+}
+
+.con{
+  width: 28px;
+  height: 28px;
+  border: 1px solid white;
+  border-radius: 100px;
+  background:white;
+  /*align-items: center;*/
+}
+.dichuyen1{
+  animation: dichuyen1 0.5s forwards;
+}
+@-webkit-keyframes dichuyen1{
+  from {transform:translateX(0px)}
+  to {transform:translateX(30px)}
+
+}
+.dichuyen2{
+  animation: dichuyen2 0.5s forwards;
+
+}
+@-webkit-keyframes dichuyen2{
+  from {transform:translateX(30px)}
+  to {transform:translateX(0px)}
+
+}
+.mau1{
+  background-color: green;
+  transition: 1s;
+  border-color: green;
+}
+.mau2{
+    background-color: #c6c6c6;
+    transition: 1s;
+}
