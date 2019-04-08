@@ -1,0 +1,82 @@
+body{
+	background-image: url(https://images.pexels.com/photos/1038935/pexels-photo-1038935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	color: #313131;
+	font-family: "Roboto",sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-repeat:repeat-x;
+}
+.input-group{
+	
+	margin: 1rem 0;
+	position: relative;
+}
+form{
+	background-color: white;
+	padding: 1rem 1.2rem;
+	border-radius: 20px;
+	box-shadow: 0.2px 2px 12px rgba(0,0,0,.2) ;/*x y blur color*/
+	text-shadow: 0.2px 2px 12px rgba(0,0,0,.2);
+	align-items: center;
+}
+form h2 {
+	text-align: center;
+	font-weight: 400;
+	user-select: none; /* Không cho người dùng bôi đen*/
+}
+/*form button{
+	align-items: center;
+
+}*/
+form input{
+	border: none;
+	margin: 4px auto;
+	border-bottom: 1px solid dodgerblue;
+	outline: none;
+	padding: 6px 4px;
+}
+form label{
+	position: absolute;
+	left:5px;
+	top:6px;
+	font-weight: 400;
+	font-size: 14px;
+	transition: 200ms;
+	pointer-events: none; /* vô hiệu hóa toàn bộ hiệu ứng chuột trên class label */
+}
+input:focus + label, input:valid + label{  /*Khi focus sẽ tác động vào label && khi dữ liệu input hợp lệ thì tác động vào label*/
+	top: -10px;
+	color: dodgerblue;
+	font-size: 13.5px;
+}
+form button {
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); /* webgradient.com*/
+	padding :1rem 2rem;
+	border: none;
+	color: white;
+	border-radius: 30px;	
+	width: 100%;
+	cursor: pointer; /* khi di chuột vào thì thành bàn tay*/
+	box-shadow: 0.2px 2px 12px rgba(0,0,0,.2)
+
+
+}
+form button:hover{
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+	transition: 1s;
+}
+form p{
+	/*justify-content: center;*/
+	text-align: center;
+	font-weight: 400;
+	font-size: 12px;
+	opacity: 0.7;
+	margin-top: 20px;
+}
+form p a{
+	color: inherit;/*kế thừa của cha*/
+	text-decoration: none;
+	opacity: 1;
+}
